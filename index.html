@@ -1,12 +1,233 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Troon Korea</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Troon Korea</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0b0b;
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.75)),
+        url('https://images.unsplash.com/photo-1535131749006-b7f58c99034b?auto=format&fit=crop&w=1800&q=80');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px 10%;
+    }
+    nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 25px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,.35);
+    }
+    nav .logo {
+      font-size: 24px;
+      letter-spacing: 3px;
+      font-weight: bold;
+      color: #d6b46a;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 14px;
+    }
+    .hero h1 {
+      font-size: 64px;
+      letter-spacing: 5px;
+      margin-bottom: 20px;
+    }
+    .hero h2 {
+      color: #d6b46a;
+      font-size: 24px;
+      font-weight: normal;
+      margin-bottom: 25px;
+    }
+    .hero p {
+      max-width: 680px;
+      font-size: 18px;
+      color: #ddd;
+      margin-bottom: 35px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      border: 1px solid #d6b46a;
+      color: #d6b46a;
+      text-decoration: none;
+      letter-spacing: 1px;
+      transition: .3s;
+    }
+    .btn:hover {
+      background: #d6b46a;
+      color: #000;
+    }
+    section {
+      padding: 90px 10%;
+    }
+    .dark { background: #111; }
+    .gold-title {
+      color: #d6b46a;
+      font-size: 14px;
+      letter-spacing: 3px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+    h3 {
+      font-size: 36px;
+      margin-bottom: 25px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .card {
+      background: #181818;
+      padding: 35px;
+      border: 1px solid #2a2a2a;
+    }
+    .card h4 {
+      color: #d6b46a;
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+    .card p {
+      color: #ccc;
+      font-size: 15px;
+    }
+    .contact {
+      text-align: center;
+      background:
+        linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)),
+        url('https://images.unsplash.com/photo-1593111774240-d529f12cf4bb?auto=format&fit=crop&w=1800&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+    footer {
+      padding: 30px 10%;
+      background: #050505;
+      color: #888;
+      text-align: center;
+      font-size: 13px;
+    }
+    @media(max-width: 768px) {
+      nav { flex-direction: column; gap: 15px; }
+      nav a { margin: 0 8px; }
+      .hero h1 { font-size: 42px; }
+      section { padding: 60px 7%; }
+    }
+  </style>
 </head>
 <body>
-<h1>Troon Korea</h1>
-<p>Global Golf & Hospitality Development</p>
-<p>Welcome to Troon Korea.</p>
+
+  <nav>
+    <div class="logo">TROON KOREA</div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#membership">Membership</a>
+      <a href="#development">Development</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <div class="hero">
+      <h1>TROON KOREA</h1>
+      <h2>Global Golf • Hospitality • Development</h2>
+      <p>
+        Introducing world-class golf management, premium membership experiences,
+        and international hospitality development opportunities to Korea and Asia.
+      </p>
+      <a href="#about" class="btn">Explore More</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="gold-title">About</div>
+    <h3>World-Class Golf & Hospitality Platform</h3>
+    <p>
+      Troon Korea is positioned to connect Korea’s golf, resort, membership,
+      and hospitality markets with international standards in operations,
+      service, branding, and development.
+    </p>
+  </section>
+
+  <section id="membership" class="dark">
+    <div class="gold-title">Membership</div>
+    <h3>Premium Access for Korean Golfers</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>Troon Access</h4>
+        <p>Flexible golf access, rewards, and lifestyle benefits for golfers seeking global experiences.</p>
+      </div>
+      <div class="card">
+        <h4>Troon Advantage</h4>
+        <p>Enhanced membership benefits designed for club, lounge, academy, and partner-based programs.</p>
+      </div>
+      <div class="card">
+        <h4>Private & Privé Network</h4>
+        <p>Premium club-level access concepts connected to elite golf destinations and member privileges.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="development">
+    <div class="gold-title">Development Services</div>
+    <h3>Golf Course, Resort & Membership Development</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>Golf Operations</h4>
+        <p>Operational advisory, agronomy, service standards, staffing, and guest experience development.</p>
+      </div>
+      <div class="card">
+        <h4>Hospitality Strategy</h4>
+        <p>Resort, hotel, wellness, and lifestyle concepts aligned with international golf destinations.</p>
+      </div>
+      <div class="card">
+        <h4>Market Expansion</h4>
+        <p>Korea and Asia-focused business development, partnerships, membership sales, and brand positioning.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div class="gold-title">Asia Projects</div>
+    <h3>Connecting Korea with Global Golf Destinations</h3>
+    <p>
+      Troon Korea supports cross-border opportunities across Korea, Japan,
+      Vietnam, Thailand, Cambodia, the Philippines, Indonesia, and Hawaii,
+      focusing on premium golf, resort, academy, and membership platforms.
+    </p>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="gold-title">Contact</div>
+    <h3>Let’s Build the Future of Golf in Korea</h3>
+    <p>For partnership, development, membership, or advisory inquiries.</p>
+    <br>
+    <a href="mailto:johnkim.troon@gmail.com" class="btn">Contact Troon Korea</a>
+  </section>
+
+  <footer>
+    © 2026 Troon Korea. All Rights Reserved.
+  </footer>
+
 </body>
 </html>
